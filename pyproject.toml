@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msekit"
+version = "0.0.1"
+description = "A Python toolkit for physically grounded materials science modeling, connecting atomistic simulations, local mechanics, and educational workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Eugene J. Ragasa" }
+]
+dependencies = [
+  "numpy",
+  "scipy"
+]
+
+[project.urls]
+Repository = "https://github.com/eragasa/projectkoios-mse"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
