@@ -24,63 +24,7 @@ The goal is not to hide the physics behind black-box routines. The goal is to ex
 
 `msekit` is in early development.
 
-The first development target is local strain analysis from atomistic configurations:
-
-$$
-\text{atomic positions}
-\rightarrow
-\text{neighbor geometry}
-\rightarrow
-\mathbf{F}_a
-\rightarrow
-\boldsymbol{\varepsilon}_a
-$$
-
-For each atom $a$, the local deformation gradient $\mathbf{F}_a$ is computed by comparing reference neighbor vectors with deformed neighbor vectors:
-
-$$
-\mathbf{R}_{ab}
-=
-\mathbf{X}_b-\mathbf{X}_a,
-\qquad
-\mathbf{r}_{ab}
-=
-\mathbf{x}_b-\mathbf{x}_a.
-$$
-
-The fitted local deformation gradient satisfies
-
-$$
-\mathbf{r}_{ab}
-\approx
-\mathbf{F}_a \mathbf{R}_{ab}.
-$$
-
-From $\mathbf{F}_a$, local strain tensors can be computed, such as the small-strain tensor
-
-$$
-\boldsymbol{\varepsilon}_a
-=
-\frac{1}{2}
-\left(
-\mathbf{F}_a+\mathbf{F}_a^T
-\right)
--
-\mathbf{I},
-$$
-
-or the Green--Lagrange strain tensor
-
-$$
-\mathbf{E}_a
-=
-\frac{1}{2}
-\left(
-\mathbf{F}_a^T\mathbf{F}_a
--
-\mathbf{I}
-\right).
-$$
+The first development target is local strain analysis from atomistic configurations.  For each atom $a$, the local deformation gradient $\mathbf{F}_a$ is computed by comparing reference neighbor vectors with deformed neighbor vectors
 
 ## Planned Package Structure
 
