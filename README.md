@@ -68,3 +68,22 @@ msekit/
 └── README.md
 ```
 
+## Citation
+
+If you use or adapt this project, please cite:
+
+```bibtex
+@misc{ragasa_msekit_2026,
+  author       = {Ragasa, Eugene Joseph M.},
+  title        = {{msekit}: Materials Science Engineering Toolkit},
+  year         = {2026},
+  url          = {https://github.com/eugeneragasa/msekit},
+  note         = {Software documentation and educational materials.}
+}
+```
+
+
+## License
+Code in this repository, including files in `src/` and `tests/`, is licensed under the Apache License 2.0. See `LICENSE`.  Documentation and educational materials, including files in `docs/` and `notebooks/`, are licensed under the Creative Commons Attribution 4.0 International License. See `LICENSE-docs`.
+
+
